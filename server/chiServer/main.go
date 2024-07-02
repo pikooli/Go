@@ -28,8 +28,8 @@ func formHandler(w http.ResponseWriter, r *http.Request) {
 	var founder Founder
 	json.NewDecoder(r.Body).Decode(&founder)
 	founder.Age = founder.Age * 2
-	founders = append(founders, founder)
-
+	founders = append(founders, founder)	
+	
 	json.NewEncoder(w).Encode(founders)
 }
 

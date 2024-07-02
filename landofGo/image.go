@@ -14,9 +14,10 @@ At should return a color; the value v in the last picture generator corresponds 
 package main
 
 import (
-"golang.org/x/tour/pic"
-    "image"
-    "image/color"
+	"image"
+	"image/color"
+
+	"golang.org/x/tour/pic"
 )
 
 
